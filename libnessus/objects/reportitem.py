@@ -269,4 +269,4 @@ class NessusReportItem(object):
         Get the solution provide by nessus
         :return str
         """
-        return self.__vuln_info['solution']
+        return self.__vuln_info.get('solution', "")
